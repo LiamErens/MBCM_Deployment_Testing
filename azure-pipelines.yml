@@ -9,7 +9,7 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
   webAppName: 'MBCMDeploymentTesting'  
-  azureSubscription: 'ADvTECH-Tertiary Varsity College'  
+  azureSubscription: 'e31273bf-0dae-4395-a8b5-33f801de7c65'  
   slotName: ''
 
 steps:
@@ -34,7 +34,7 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'ADvTECH-Tertiary Varsity College'
+    azureSubscription: 'e31273bf-0dae-4395-a8b5-33f801de7c65'
     appName: 'MBCMDeploymentTesting'
     package: '$(Pipeline.Workspace)/drop/WebApp.zip'
     deployToSlotOrASE: true
