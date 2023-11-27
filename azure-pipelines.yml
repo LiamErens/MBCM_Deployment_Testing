@@ -34,8 +34,8 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '$(azureSubscription)'
-    appName: '$(webAppName)'
+    azureSubscription: 'ADvTECH-Tertiary Varsity College'
+    appName: 'MBCMDeploymentTesting'
     package: '$(Pipeline.Workspace)/drop/WebApp.zip'
     deployToSlotOrASE: true
-    slotName: '$(slotName)'  
+    slotName: 'production'
